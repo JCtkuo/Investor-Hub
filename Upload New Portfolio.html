@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel='stylesheet' href='style.css'>
+      <script>
+        $(document).ready(function(){
+              $('.dropdown-trigger').dropdown();
+              $('.toggle-table').click(function(){
+        $("#toggle").toggle();
+    });
+        });
+      </script>
+
+
+    </head>
+
+
+
+    <body
+    style="background-color: #212121 !important; margin: 0 120px 0 120px">
+  <!-- Primary Nav -->
+
+<div class=" col 12 section">
+  <nav>
+    <div class="nav-wrapper grey darken-4">
+      <a href="Create Your Portfolio.html"> <img src="http://www.norc.org/NewsEventsPublications/PressReleases/Documents/download.png" width="165"> </a>
+      <ul class="right">
+        <li class="active" style="background-color: #424242; border-radius: 15px;"><a href="Portfolio Dashboard.html">Portfolio</a></li>
+        <li><a href="Companies Search.HTML">Companies</a></li>
+        <li><a href="Data Analyzer.HTML">Data Analyzer</a></li>
+        <li><a href="#">Methodology</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="divider grey darken-3"> </div>
+
+<!-- Header -->
+    <h5 class="center-align section" style="color: #757575"> Edit Your Portfolio</h5>
+
+<!-- Edit Bar -->
+<div class=" row">
+    <form class="col s8">
+      <div class="row">
+        <div class="input-field col s8">
+          <i class="material-icons prefix" style="color: white">mode_edit</i>
+          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <label for="icon_prefix2" style="color: #757575">My Portfolio</label>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+<!-- Instructions -->
+  <div class=" row">
+    <div class="col s12 white-text">
+      <p> 1. Use the <span style="color: #dc4405">.CSV template</span> to construct your portfolio.</p>
+      <p> 2. Drop the file to the box below or <span style="color: #dc4405">browse </span>. </p>
+    </div>
+  </div>
+
+<!-- Drop Box -->
+<div class=" section row">
+  <div class="col s12 center" style="background-color: #282828">
+    <i class="large material-icons center" style="vertical-align:middle; color: white; margin: 100px">file_upload</i>
+  </div>
+<div class="container section row">
+  <div class="col s12 center">
+    <a href="Portfolio Dashboard.HTML" class="btn center-align" style="background-color: #dc4405; margin-top: 30px ">Upload Portfolio</a>
+  </div>
+</div>
+
+
+
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="materialize.min.js"></script>
+
+  </html>

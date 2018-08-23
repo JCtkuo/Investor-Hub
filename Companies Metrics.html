@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- ENABLE FOR BOOTSTRAP AJAX CSV TO HTML TABLE
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+-->
+      <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/> -->
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel='stylesheet' href='style.css'>
+      <script>
+        $(document).ready(function(){
+              $('.dropdown-trigger').dropdown();
+        });
+      </script>
+
+
+    </head>
+
+
+
+    <body
+    style="background-color: #212121 !important; margin: 0 120px 0 120px">
+  <!-- Primary Nav -->
+
+      <div class=" col s12 section">
+        <nav>
+          <div class="nav-wrapper grey darken-4">
+            <a href="Create Your Portfolio.html"> <img src="http://www.norc.org/NewsEventsPublications/PressReleases/Documents/download.png" width="165"> </a>
+            <ul class="right">
+              <li><a href="Portfolio Dashboard.HTML">Portfolio</a></li>
+              <li class="active" style="background-color: #424242; border-radius: 15px;"><a href="Companies Search.HTML">Companies</a></li>
+              <li><a href="Data Analyzer.HTML">Data Analyzer</a></li>
+              <li><a href="#">Methodology</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="divider grey darken-3"> </div>
+
+  <!-- Secondary Nav -->
+      <div class=" col s12 section">
+        <nav>
+          <div class="nav-wrapper grey darken-4">
+            <ul class="left">
+              <li><a href="Companies Search.HTML">Search</a></li>
+              <li><a href="Companies Overview.HTML">Overview</a></li>
+              <li><a href="Company Scores.HTML">Scores</a></li>
+              <li class="active" style="background-color: #424242; border-radius: 15px;"><a href="Companies Metrics.HTML">Metrics</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+<!-- Dropdown -->
+      <div class=" col s12 right-align section">
+        <a class='dropdown-trigger btn' style="background-color: #424242" href='#' data-target='dropdownyear'>Year: 2018<i class="material-icons" style="vertical-align:middle;">arrow_drop_down</i></a>
+          <ul id='dropdownyear' class='dropdown-content'>
+            <li><a href="#!" class="center-align" style="color: #424242">2018</a></li>
+            <li><a href="#!" class="center-align" style="color: #424242">2017</a></li>
+          </ul>
+        <a href="Portfolio Edit.HTML"><i class="small material-icons" style="vertical-align:middle; color: white; padding: 10px">add_to_photos</i> </a>
+        <i class="small material-icons" style="vertical-align:middle; color: white; padding: 10px">file_download</i>
+      </div>
+
+<!-- Company Header -->
+
+      <div class=" section row" style="display: flex !important; justify-content: space-between !important;">
+        <div class="col 4">
+        <img src="https://i.pinimg.com/originals/af/f2/16/aff216eb233cd9fdb730f8f3e16159a7.jpg" width="70" height="65"> </img>
+        </div>
+        <div class="col 4">
+          <p class="white-text center-align" style="vertical-align:middle; font-size: 20px">ACME Corporation</p>
+        </div>
+        <div class="col 1">
+          <p class="white-text center-align" style="vertical-align:middle;">79 <br>Score</p>
+        </div>
+        <div class="col 1">
+          <p class="white-text center-align" style="vertical-align:middle;">99th <br>Percentile</p>
+        </div>
+        <div class="col 1">
+          <p class="white-text center-align" style="vertical-align:middle;">12 <br>Overall Rank</p>
+        </div>
+        <div class="col 1">
+          <p class="white-text center-align" style="vertical-align:middle;">3 <br>Industry Rank</p>
+        </div>
+      </div>
+
+
+<!-- Theme Dropdown -->
+      <div class=" col s12 left-align section">
+        <a class='dropdown-trigger btn' style="background-color: #424242" href='#' data-target='dropdowntheme'>Theme: All<i class="material-icons" style="vertical-align:middle;">arrow_drop_down</i></a>
+          <ul id='dropdowntheme' class='dropdown-content'>
+            <li><a href="#!" class="center-align" style="color: #424242">All</a></li>
+            <li><a href="#!" class="center-align" style="color: #424242">Workers</a></li>
+            <li><a href="#!" class="center-align" style="color: #424242">Customers</a></li>
+            <li><a href="#!" class="center-align" style="color: #424242">Products</a></li>
+            <li><a href="#!" class="center-align" style="color: #424242">Environment</a></li>
+            <li><a href="#!" class="center-align" style="color: #424242">Communities</a></li>
+            <li><a href="#!" class="center-align" style="color: #424242">Jobs</a></li>
+            <li><a href="#!" class="center-align" style="color: #424242">Management & Shareholders</a></li>
+          </ul>
+      </div>
+
+
+<!-- Page Description -->
+      <div class=" section row" style="display: flex !important; justify-content: space-between !important;">
+        <div class="col s12 white-text">
+          <p style="font-size: 18px"> Below are all the meterics used to score JUST Capital's universe of companies. The metrics can be grouped into 39 sub-themes which are further grouped in our 7 themes of Workers, Customers, Products, Environment, Communities, Jobs, and Management & Shareholders.</p>
+        </div>
+      </div>
+
+<!-- Component calculation -->
+      <div class=" section">
+        <div class="col s12 white-text">
+          <h4 style="color: #757575"> Commitment to Ensuring a Safe Workplace </h4>
+          <p> Calculated from Data Point Values: [ <span style="color: #dc4405">Employee Health & Safety Policy </span>+ <span style="color: #dc4405">Employee Health & Safety Team</span> + <span style="color: #dc4405">Health & Safety Training </span> + <span style="color: #dc4405">Health & Safety Management Systems</span>] * 2.5</p>
+        </div>
+      </div>
+
+<!--Metric Cards-->
+      <div class=" section row">
+         <div class="col s12">
+           <div class="card" style="background-color: #282828">
+             <div class="card-content white-text">
+               <span class="card-title">Employee Health & Safety Policy</span>
+               <p>An assessment of whether the company has established a policy to improve employee health and safety.</p>
+               <ul style="columns: 2">
+                <li><a class="white-text">ACME's Value: True</a></li>
+                <li><a class="white-text">Unit: True or False</a></li>
+                <li><a class="white-text">Geography: US</a></li>
+                <li><a class="white-text">Data date: Latest year available (2014, 2015, 2016)</a></li>
+                <li><a class="white-text">Date Accessed: 17-May</a></li>
+                <li><a class="white-text">Industry Mean: 87.5% True</a></li>
+                <li><a class="white-text">Industry Standard Deviation: 0.34</a></li>
+                <li><a class="white-text">Source: Company filings and other public documents</a></li>
+                <li><a style="color: #dc4405">https://company.com/policy</a></li>
+              </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <div class=" section row">
+          <div class="col s12">
+            <div class="card" style="background-color: #282828">
+              <div class="card-content white-text">
+                <span class="card-title">Health & Safety Management Systems</span>
+                <p>An assessment of whether the company has health and safety management systems in place, such as the OSHAS 18001 (Occupation Health & Safety Management System), OSHA VPP (Occupational Safety & Health Administration Voluntary Protection Program), and ILO-OSH 2001 (International Labor Organization - Occupational Safety and Health Guidelines).</p>
+                <ul style="columns: 2">
+                 <li><a class="white-text">ACME's Value: True</a></li>
+                 <li><a class="white-text">Unit: True or False</a></li>
+                 <li><a class="white-text">Geography: US</a></li>
+                 <li><a class="white-text">Data date: Latest year available (2014, 2015, 2016)</a></li>
+                 <li><a class="white-text">Date Accessed: 17-May</a></li>
+                 <li><a class="white-text">Industry Mean: 66.67% True</a></li>
+                 <li><a class="white-text">Industry Standard Deviation: 0.48</a></li>
+                 <li><a class="white-text">Source: Company filings and other public documents</a></li>
+                 <li><a style="color: #dc4405">https://company.com/system</a></li>
+               </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <!-- Component calculation -->
+
+      <div class=" divider"></div>
+          <div class=" section">
+            <div class="col s12 white-text">
+          <h4 style="color: #757575"> Benefits Quality </h4>
+          <p> Calculated from Data Point Values: <span style="color: #dc4405">Benefits Quality Rating </span></p>
+            </div>
+          </div>
+
+      <div class=" section row">
+         <div class="col s12">
+           <div class="card" style="background-color: #282828">
+             <div class="card-content white-text">
+               <span class="card-title">Benefits Quality Rating</span>
+               <p>The crowd-sourced average rating of a company's benefits, measured on a five-point scale by current and former employees of the company.</p>
+               <ul style="columns: 2">
+                <li><a class="white-text">ACME's Value: 3.69</a></li>
+                <li><a class="white-text">Unit: (0-5)</a></li>
+                <li><a class="white-text">Geography: US</a></li>
+                <li><a class="white-text">Data date: 2012 - 2017</a></li>
+                <li><a class="white-text">Date Accessed: 17-May</a></li>
+                <li><a class="white-text">Industry Mean: 3.45</a></li>
+                <li><a class="white-text">Industry Standard Deviation: 0.37</a></li>
+                <li><a class="white-text">Source: JUST Capital Analysis</a></li>
+              </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="materialize.min.js"></script>
+
+  </html>

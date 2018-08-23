@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel='stylesheet' href='style.css'>
+      <script>
+        $(document).ready(function(){
+              $('.dropdown-trigger').dropdown();
+              $('.toggle-table').click(function(){
+        $("#toggle").toggle();
+    });
+        });
+      </script>
+
+
+    </head>
+
+
+
+    <body
+    style="background-color: #212121 !important; margin: 0 120px 0 120px">
+  <!-- Primary Nav -->
+
+<div class=" col 12 section">
+  <nav>
+    <div class="nav-wrapper grey darken-4">
+      <a href="Create Your Portfolio.html"> <img src="http://www.norc.org/NewsEventsPublications/PressReleases/Documents/download.png" width="165"> </a>
+      <ul class="right">
+        <li class="active" style="background-color: #424242"><a href="Portfolio Dashboard.html">Portfolio</a></li>
+        <li><a href="Companies Search.HTML">Companies</a></li>
+        <li><a href="Data Analyzer.HTML">Data Analyzer</a></li>
+        <li><a href="#">Methodology</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="divider grey darken-3"> </div>
+
+<!-- Header -->
+    <h5 class="center-align section" style="color: #757575"> Edit Your Portfolio</h5>
+
+<!-- Edit Bar -->
+<div class=" row">
+    <form class="col s8">
+      <div class="row">
+        <div class="input-field col s8">
+          <i class="material-icons prefix" style="color: white">mode_edit</i>
+          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <label for="icon_prefix2" style="color: #757575">My Portfolio</label>
+        </div>
+      </div>
+    </form>
+    <div class="col s4">
+        <a class="btn-small" style="background-color: #dc4405; margin-top: 30px ">Save Portfolio</a>
+    </div>
+  </div>
+
+<!-- Table Edit and Backtest -->
+<div class=" section row">
+  <div class="col s5" style="background-color: #282828; border-right: 5px solid #212121">
+    <h5 class="center-align" style="color: #757575"> Holdings </h5>
+    <br>
+    <table class="responsive-table bordered" style="color: #fff; background-color: #282828">
+      <tr><td></td><td>ISIN</td><td>Name</td><td>Number of Shares</td><td>Cost Basis</td></tr>
+      <tr><td><i class="tiny material-icons" style="vertical-align:middle; color: #fff">edit</i> 1.</td><td>US00846U1016</td><td>Blue Bat</td><td>98</td><td>$89.25 </td></tr>
+      <tr><td><i class="tiny material-icons" style="vertical-align:middle; color: #fff">edit</i>2.</td><td>US0138721065</td><td>Green Grass</td><td>65</td><td>$47.23 </td></tr>
+      <tr><td><i class="tiny material-icons" style="vertical-align:middle; color: #fff">edit</i>3.</td><td>US02376R1023</td><td>Yellow Yam</td><td>26</td><td>$36.33 </td></tr>
+      <tr><td><i class="tiny material-icons" style="vertical-align:middle; color: #fff">edit</i>4.</td><td>US00751Y1064</td><td>Purple Pin</td><td>48</td><td>$59.98 </td></tr>
+      <tr><td><i class="tiny material-icons" style="vertical-align:middle; color: #fff">edit</i>5.</td><td>US0378331005</td><td>Orange Out</td><td>98</td><td>$12.23 </td></tr>
+      <tr><td><i class="tiny material-icons" style="vertical-align:middle; color: #fff">edit</i>6.</td><td>US00287Y1091</td><td>Red Ranger</td><td>12</td><td>$36.33 </td></tr>
+      <tr><td><i class="tiny material-icons" style="vertical-align:middle; color: #fff">edit</i>7.</td><td>US03073E1055</td><td>White Willow</td><td>12</td><td>$78.95 </td></tr>
+      <tr><td><i class="tiny material-icons" style="vertical-align:middle; color: #fff">edit</i>8.</td><td>US0036541003</td><td>Pink Peach</td><td>12</td><td>$1.00 </td></tr>
+      <tr><td><i class="tiny material-icons" style="vertical-align:middle; color: #fff">edit</i>9.</td><td>US0028241000</td><td>Teal Turtle</td><td>49</td><td>$2.36 </td></tr>
+      <tr><td><i class="tiny material-icons" style="vertical-align:middle; color: #fff">edit</i>10.</td><td>US0042251084</td><td>Brown Bear</td><td>16</td><td>$6.69 </td></tr>
+      <tr><td><i class="tiny material-icons" style="vertical-align:middle; color: #fff">edit</i>11.</td><td>BMG0450A1053</td><td>Black Ball</td><td>54</td><td>$14.39 </td></tr>
+      <tr><td><i class="tiny material-icons" style="vertical-align:middle; color: #fff">edit</i>12.</td><td>US00404A1097</td><td>Gray Game</td><td>24</td><td>$32.23 </td></tr>
+      <tr><td><i class="tiny material-icons" style="vertical-align:middle; color: #fff">edit</i>13.</td><td>US00766T1007</td><td>Indigo In</td><td>59</td><td>$12.36 </td></tr>
+      <tr><td><i class="tiny material-icons" style="vertical-align:middle; color: #fff">edit</i>14.</td><td>IE00B4BNMY34</td><td>Lavender Lap</td><td>14</td><td>$48.89 </td></tr>
+      <tr><td><i class="tiny material-icons" style="vertical-align:middle; color: #fff">edit</i>15.</td><td>US00724F1012</td><td>Bronze Bee</td><td>29</td><td>$14.23 </td></tr>
+    </table>
+
+  </div>
+  <div class="col s7" style="background-color: #282828; border-left: 5px solid #212121">
+    <h5 class="center-align" style="color: #757575"> Performance </h5>
+    <br>
+
+
+
+    <span class="white-text" style="vertical-align: bottom">Add to Performance Tracker:
+    <a class='dropdown-trigger btn left-align' style="vertical-align: bottom; background-color: #424242; margin-left: 10px; margin-right: 10px" href='#' data-target='dropdowntracker'>My Portfolio 2<i class="material-icons" style="vertical-align:middle;">arrow_drop_down</i></a>
+    <ul id='dropdowntracker' class='dropdown-content'>
+      <li><a href="#!" class="center-align" style="color: #424242">My Portfolio 1</a></li>
+      <li><a href="#!" class="center-align" style="color: #424242">My Portfolio 2</a></li>
+      <li><a href="#!"class="center-align" style="color: #424242">S&P 500</a></li>
+      <li><a href="#!"class="center-align" style="color: #424242">Russell 1000</a></li>
+      <li><a href="#!"class="center-align" style="color: #424242">JULCD</a></li>
+      <li><a href="#!"class="center-align" style="color: #424242">JUST 100</a></li>
+      <li><a href="#!"class="center-align" style="color: #424242">Environment Portfoio</a></li>
+      <li><a href="#!"class="center-align" style="color: #424242">Diversity Portfolio</a></li>
+      <li><a href="#!"class="center-align" style="color: #424242">Governance Portfolio</a></li>
+
+    </ul>
+      <a class="toggle-table right btn" style="background-color: #424242; vertical-align: bottom;">Refresh</a>
+  </span>
+  <h5 class="center-align section" style="color: #757575; margin-top: 100px"> Total Return </h5>
+  <img src="tracker.png" class="center-block" style="width: 95%; margin-bottom: 75px">
+  <h5 class="center-align section" style="color: #757575"> Score </h5>
+  <img src="Score tracker.png" class="center-block" style="width: 95%; margin-bottom: 30px">
+
+</div>
+
+
+
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="materialize.min.js"></script>
+
+  </html>
