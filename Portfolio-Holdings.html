@@ -6,30 +6,31 @@
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/> -->
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel='stylesheet' href='style.css'>
       <script>
         $(document).ready(function(){
               $('.dropdown-trigger').dropdown();
         });
       </script>
+
+
     </head>
 
 
 
     <body
     style="background-color: #212121 !important; margin: 0 120px 0 120px">
-
   <!-- Primary Nav -->
-<div class=" col s12 section">
+<div class="col 12 section">
   <nav>
     <div class="nav-wrapper grey darken-4">
-      <a href="/Create Your Portfolio"> <img src="http://www.norc.org/NewsEventsPublications/PressReleases/Documents/download.png" width="165"> </a>
+      <a href="add-new-portfolio.html"> <img src="http://www.norc.org/NewsEventsPublications/PressReleases/Documents/download.png" width="165"> </a>
       <ul class="right">
-        <li class="active" style="background-color: #424242; border-radius: 15px;"> <a href="/Portfolio Dashboard">Portfolio</a></li>
-        <li><a href="/Companies Search">Companies</a></li>
-        <li><a href="/Data Analyzer">Data Analyzer</a></li>
+        <li class="active" style="background-color: #424242; border-radius: 15px;"> <a href="Portfolio-Dashboard.html">Portfolio</a></li>
+        <li><a href="Companies-Search.html">Companies</a></li>
+        <li><a href="Data-Analyzer.html">Data Analyzer</a></li>
         <li><a href="#">Methodology</a></li>
         <li><a href="#">FAQ</a></li>
       </ul>
@@ -39,33 +40,39 @@
 <div class="divider grey darken-3"> </div>
 
   <!-- Secondary Nav -->
-<div class=" col s12 section">
+<div class=" col 12 section">
   <nav>
     <div class="nav-wrapper grey darken-4">
       <ul class="left">
-        <li><a href="/Portfolio Dashboard">Dashboard</a></li>
-        <li><a href="/Portfolio Holdings">Holdings</a></li>
-        <li class="active" style="background-color: #424242; border-radius: 15px;"><a href="/Portfolio Holdings Distribution">Holdings Distribution</a></li>
-        <li><a href="/Portfolio Scores & Returns Matrix">Score & Returns Matrix</a></li>
+        <li><a href="Portfolio-Dashboard.html">Dashboard</a></li>
+        <li class="active" style="background-color: #424242; border-radius: 15px;"><a href="Portfolio-Holdings.html">Holdings</a></li>
+        <li><a href="Portfolio-Holdings-Distribution.html">Holdings Distribution</a></li>
+        <li><a href="Portfolio-Scores-Returns Matrix.html">Score & Returns Matrix</a></li>
       </ul>
     </div>
   </nav>
 </div>
   <!-- Filter Bars -->
+  <!-- Dropdown Trigger -->
 
-<div class=" col s12 center-align section" style="display: flex !important; justify-content: space-between !important;">
-      <a class='dropdown-trigger btn' style="background-color: #424242" href='#' data-target='dropdownportfolio'>Portfolio: My Portfolio<i class="material-icons" style="vertical-align:middle;">arrow_drop_down</i> </a>
+<div class=" col 12 center-align section" style="display: flex !important; justify-content: space-between !important;">
 
+      <a class='dropdown-trigger btn' style="background-color: #424242" href='#' data-target='dropdownportfolio'>Portfolio: My Portfolio<i class="material-icons" style="vertical-align:middle;">arrow_drop_down</i></a>
+
+      <!-- Dropdown Structure -->
       <ul id='dropdownportfolio' class='dropdown-content'>
         <li><a href="#!"class="center-align" style="color: #424242">My Portfolio Portfolio</a></li>
         <li><a href="#!"class="center-align" style="color: #424242">Environment Portfolio</a></li>
         <li><a href="#!"class="center-align" style="color: #424242">Diversity Portfolio</a></li>
         <li><a href="#!"class="center-align" style="color: #424242">Governance Portfolio</a></li>
+
       </ul>
+
 
 
       <a class='dropdown-trigger btn' style="background-color: #424242" href='#' data-target='dropdownbenchmark'>Benchmark: S&P 500<i class="material-icons" style="vertical-align:middle;">arrow_drop_down</i></a>
 
+      <!-- Dropdown Structure -->
       <ul id='dropdownbenchmark' class='dropdown-content'>
         <li><a href="#!"class="center-align" style="color: #424242">S&P 500</a></li>
         <li><a href="#!"class="center-align" style="color: #424242">Russell 1000</a></li>
@@ -78,9 +85,10 @@
 
 
 
-<!-- dropdown themes -->
+
       <a class='dropdown-trigger btn' style="background-color: #424242" href='#' data-target='dropdowntheme'>Issue: Overall<i class="material-icons" style="vertical-align:middle;">arrow_drop_down</i></a>
 
+      <!-- Dropdown Structure -->
       <ul id='dropdowntheme' class='dropdown-content'>
         <li><a href="#!"class="center-align" style="color: #424242">Overall</a></li>
         <li><a href="#!"class="center-align" style="color: #424242">Workers</a></li>
@@ -96,6 +104,7 @@
 
       <a class='dropdown-trigger btn' style="background-color: #424242" href='#' data-target='dropdownindustry'>Industry: All<i class="material-icons" style="vertical-align:middle;">arrow_drop_down</i></a>
 
+      <!-- Dropdown Structure -->
       <ul id='dropdownindustry' class='dropdown-content'>
         <li><a href=“#!”class="center-align" style="color: #424242">Aerospace & Defense</a></li>
         <li><a href=“#!”class="center-align" style="color: #424242">Automobiles & Parts</a></li>
@@ -134,55 +143,40 @@
 
       <a class='dropdown-trigger btn' style="background-color: #424242" href='#' data-target='dropdownyear'>Year: 2018<i class="material-icons" style="vertical-align:middle;">arrow_drop_down</i></a>
 
+      <!-- Dropdown Structure -->
       <ul id='dropdownyear' class='dropdown-content'>
         <li><a href="#!" class="center-align" style="color: #424242">2018</a></li>
         <li><a href="#!" class="center-align" style="color: #424242">2017</a></li>
       </ul>
 <i class="small material-icons" style="vertical-align:middle; color: white; padding: 10px">file_download</i>
-<a href="/Portfolio Edit"><i class="small material-icons" style="vertical-align:middle; color: white; padding: 10px">settings</i> </a>
-
-</div>
-
-<!-- Graph -->
-<div class=" section row" style="background-color: #282828">
-  <div class="container col s6">
-    <h5 class="center-align section" style="color: #757575"> Holdings Distribution </h5>
-    <img class="center-block" src="Holdings Distribution Graph.png" style="width: 95%;">
-  </div>
-
-<!-- Table -->
-
-        <div class="col s3">
-          <h5 class="center-align" style="color: #757575;"> My Portfolio 1 </h5>
-            <div class="section white-text">
-              <table class="centered responsive-table bordered" style="background-color: #282828; color: #fff;">
-                <tr><td>Company</td><td>Score</td><td>Weight</td>
-                <tr><td>Blue Grass </td><td>95 <i class="tiny material-icons" style="color: #81c784; vertical-align: middle">trending_up</i></td><td>3.2%</td><td>
-                <tr><td>Green Monkey </td><td>94 <i class="tiny material-icons" style="color: #81c784; vertical-align: middle">trending_up</i></td><td>1.8% </td><td>
-                <tr><td>Yellow Snail </td><td>92 <i class="tiny material-icons" style="color: #d32f2f; vertical-align: middle">trending_down</i></td><td>1.8% </td><td>
-                <tr><td>Brown Dog </td><td>89 <i class="tiny material-icons" style="color: #fff176; vertical-align: middle">trending_flat</i></td><td>0.98% </td><td>
-                </table>
-            </div>
-          </div>
-
-
-  <div class="col s3">
-    <h5 class="center-align" style="color: #757575;"> S&P 500 </h5>
-      <div class="section white-text">
-        <table class="centered responsive-table bordered" style="background-color: #282828; color: #fff;">
-          <tr><td>Company</td><td>Score</td><td>Weight</td>
-          <tr><td>Grey Ball </td><td>87 <i class="tiny material-icons" style="color: #81c784; vertical-align: middle">trending_up</i></td><td>0.75% </td><td>
-          <tr><td>Purple Glass </td><td>85 <i class="tiny material-icons" style="color: #d32f2f; vertical-align: middle">trending_down</i></td><td>1.8% </td><td>
-        </table>
-      </div>
-  </div>
-
+<i class="small material-icons" style="vertical-align:middle; color: white; padding: 10px">settings</i>
 
 </div>
 
 
 
-<!-- Table -->
+<h4 class="center-align" style="color: #757575"> Holdings Performance</h4>
+
+<!-- IFRAME
+<iframe src="/Holdings Table" style="border:none; height:1000px; width:100%; background-color: transparent;"> </iframe>
+-->
+<br>
+<!-- Non-csv table-->
+<table class="centered responsive-table bordered" style="background-color: #282828; color: #fff">
+  <tr><td>Rank <i class="small material-icons" style="vertical-align:middle; color: #fff">arrow_drop_down</i></td><td>Company</td><td>Score</td><td>Percentile</td><td>Market Cap</td><td>ROIC</td><td>Equity Beta</td><td>PE Ratio</td><td>PB Ratio</td><td>EPS</td><td>Sales Growth</td><td>Trailing 12M TR</td><td>Dividend</td><td>ROE</td></tr>
+  <tr style="color: #fff"><td>1</td><td>Blue Bell</td><td>88</td><td>100%</td><td>1.00E+10</td><td>2.94</td><td>1.18</td><td>32.44</td><td>4.89</td><td>2.12</td><td>6.42</td><td>22.99</td><td>0.528</td><td>10.48</td></tr>
+  <tr style="color: #fff"><td>2</td><td>Red Car</td><td>85</td><td>99%</td><td>1.98E+10</td><td>6.96</td><td>1.38</td><td>15.17</td><td>1.86</td><td>1.18</td><td>25.08</td><td>72.65</td><td>0</td><td>2.77</td></tr>
+  <tr style="color: #fff"><td>3</td><td>Green Pen</td><td>82</td><td>99%</td><td>8.75E+09</td><td>-7.96</td><td>1.18</td><td>8.36</td><td>4.55</td><td>3.92</td><td>5.04</td><td>-9.77</td><td>0.4</td><td>9.91</td></tr>
+  <tr style="color: #fff"><td>4</td><td>White Whale</td><td>78</td><td>88%</td><td>9.33E+11</td><td>11.32</td><td>1.14</td><td>22.73</td><td>2.55</td><td>6.44</td><td>-2.02</td><td>-18.96</td><td>0.24</td><td>24.06</td></tr>
+  <tr style="color: #fff"><td>5</td><td>Gray Grass</td><td>85</td><td>87%</td><td>1.63E+11</td><td>21.39</td><td>1.00</td><td>18.51</td><td>7.39</td><td>9.27</td><td>6.30</td><td>25.86</td><td>2.4</td><td>36.76</td></tr>
+  <tr style="color: #fff"><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td></tr>
+  <tr style="color: #fff"><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td></tr>
+  <tr style="color: #fff"><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td></tr>
+  <tr style="color: #fff"><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td></tr>
+  <tr style="color: #fff"><td>25</td><td>Pink Code</td><td>56</td><td>2%</td><td>1.08E+10</td><td>-67.96</td><td>1.97</td><td>19.39</td><td>7.56</td><td>-2.36</td><td>620.67</td><td>-36.54</td><td>0</td><td>-51.21</td></tr>
+</table>
+
+
 
 
 
@@ -190,5 +184,7 @@
 
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="materialize.min.js"></script>
-    </body>
+
+
+
   </html>
